@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-12">
+    <table class='table bg-light p-4 table-borderless table-responsive-md border  '>
+      <thead>
+      <tr>
+        <th scope="col">Student Name</th>
+        <th scope="col">Maths</th>
+        <th scope="col">English</th>
+        <th scope="col">Science</th>
+        <th scope="col">Total</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let grade of grades">
+        <td >{{grade.studentName}}</td>
+        <td>{{grade.mathsMark}}</td>
+        <td>{{grade.engMark}}</td>
+        <td>{{grade.sciMark}}</td>
+        <td>{{grade.totMark}}</td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
